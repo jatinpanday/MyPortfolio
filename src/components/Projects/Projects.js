@@ -5,8 +5,8 @@ import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
+import weatherApp from "../../Assets/Projects/weather-app.png";
+import recipeApp from "../../Assets/Projects/recipe.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
@@ -18,12 +18,14 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are few projects I've <strong className="purple">build and deployed</strong>
         </p>
+        <p style={{ color: "white" }}>Rest of my development you can see on my <a className="purple" style={{ textDecoration: "none" }} href="https://github.com/jatinpanday"
+          target="_blank">github</a> account</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={weatherApp}
               isBlog={false}
               title="Weather App"
               description="Realtime Weather App to see the current weather. You can also Download & view this App on your Desktop as well on your Mobile phones."
@@ -34,7 +36,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={recipeApp}
               isBlog={false}
               title="Recipe App"
               description="Search any Recipe anytime and start Cooking."
